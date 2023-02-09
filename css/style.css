@@ -32,3 +32,11 @@
     aspect-ratio: 1;
     border: 2px solid black;
 }
+
+.display-none {
+    display: none;
+}
+
+.bg-violet {
+    background-color: #9957d6;
+}
