@@ -5,7 +5,7 @@ const btnPlayElement = document.querySelector('.btn-play');
 const gridElement = document.querySelector('.grid');
 
 btnPlayElement.addEventListener('click', function() {
-    console.log('click');
+    //console.log('click');
     btnPlayElement.classList.add('display-none')
 
     let gridSide = 10;
@@ -24,7 +24,7 @@ btnPlayElement.addEventListener('click', function() {
         cellElement.style.width = widthCalc;
 
         //ogni casella deve contenere il numero corrispondente a partire da 1 fino a 100
-        cellElement.innerHTML += cellInner
+        //cellElement.innerHTML += cellInner
         //console.log(cellElement)
         
         //lo "appendo" nel dom
@@ -32,11 +32,11 @@ btnPlayElement.addEventListener('click', function() {
             
             //Ogni volta che l’utente clicca su una delle caselle della griglia stampiamo in console il numero della casella cliccata 
             //(se ci riusciamo, in caso contrario stampiamo un messaggio generico)
-            console.log(cellInner)
-            cellElement.classList.add('bg-violet')
+           
+            cellElement.innerHTML = cellInner
+            
         })
     }
 
 })
-
 
