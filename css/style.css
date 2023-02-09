@@ -13,6 +13,16 @@
 .grid {
     display: flex;
     flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn-play {
+    border-radius: 5px;
+    background-color: #9957d6;
+    text-transform: uppercase;
+    padding: 10px;
+
 }
 
 .grid > .cell {
