@@ -10,20 +10,26 @@
     padding: 20px;
 }
 
-.grid {
+.grid,
+.button {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
-.btn-play {
+.grid {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.btn-play,
+.btn-try {
     border-radius: 5px;
     background-color: #9957d6;
     text-transform: uppercase;
     padding: 10px;
-
 }
+
 
 .grid > .cell {
     display: flex;

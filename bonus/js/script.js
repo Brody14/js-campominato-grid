@@ -22,6 +22,7 @@ btnPlayElement.addEventListener('click', function() {
         const cellElement = document.createElement('div');
         cellElement.classList.add('cell')
         cellElement.style.width = widthCalc;
+      
 
         //ogni casella deve contenere il numero corrispondente a partire da 1 fino a 100
         //cellElement.innerHTML += cellInner
@@ -34,12 +35,22 @@ btnPlayElement.addEventListener('click', function() {
             //(se ci riusciamo, in caso contrario stampiamo un messaggio generico)
             cellElement.classList.toggle('bg-violet')
             //console.log(cellElement.className)
-
+            
             cellElement.innerHTML = ''
 
             if(cellElement.className === 'cell bg-violet'){
                 cellElement.innerHTML = cellInner
             }
+        })
+
+        const btnRetry = document.querySelector('.btn-try')
+        
+        btnRetry.classList.remove('display-none')
+
+        btnRetry.addEventListener('click', function(){
+            cellElement.innerHTML = ''
+            cellElement.classList.remove('bg-violet')
+
         })
     }
 
