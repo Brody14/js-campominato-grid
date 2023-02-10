@@ -10,13 +10,17 @@
     padding: 20px;
 }
 
-.grid {
+.grid,
+.button {
     display: flex;
-    flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
 }
 
+.grid {
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 20px;
+}
 .btn-play {
     border-radius: 5px;
     background-color: #9957d6;
